@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found – S-Clinical</title>
+<link rel="icon" id="icon" href="/wp-content/uploads/2019/05/logo_mini-150x150.png">
+<style>
+body{margin:0;font:16px/1.6 Muli,Helvetica,Arial,sans-serif;color:#404248;background:#fff;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:0 16px}
+h1{font-weight:500;color:#2b2b2b} a{color:#0366d6}
+</style></head>
+<body><main><h1>Page not found</h1>
+<p>This page does not exist. Go to the <a id="home" href="/">S-Clinical home page</a>, or write to <a href="mailto:info@s-clinical.com">info@s-clinical.com</a>.</p></main>
+<script>
+// GitHub serves this page for every missing address, at any depth. On a project address
+// (<user>.github.io/SClinical/...) the site root is the first path segment, not "/".
+(function () {
+  if (/\.github\.io$/.test(location.hostname)) {
+    var root = '/' + location.pathname.split('/')[1] + '/';
+    document.getElementById('home').href = root;
+    document.getElementById('icon').href = root + 'wp-content/uploads/2019/05/logo_mini-150x150.png';
+  }
+})();
+</script>
+</body></html>
