@@ -33,6 +33,8 @@ If the text of a page changes, update the matching entry in `search-index.json` 
 
 For search engines, `robots.txt` points to `sitemap.xml`, which lists the 8 pages, and each page's canonical link names its
 `https://s-clinical.com/…/` address. If a page is added or removed, update `sitemap.xml` and give the new page its canonical link.
+The site is in Google Search Console as `https://s-clinical.com/`; `google7fd790a783c8c9cf.html` proves ownership, so do
+not delete it.
 
 ## Preview locally
 ```sh
