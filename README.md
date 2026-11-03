@@ -31,6 +31,9 @@ All links are relative, so the site works on the custom domain and under a GitHu
 
 If the text of a page changes, update the matching entry in `search-index.json` too.
 
+For search engines, `robots.txt` points to `sitemap.xml`, which lists the 8 pages, and each page's canonical link names its
+`https://s-clinical.com/…/` address. If a page is added or removed, update `sitemap.xml` and give the new page its canonical link.
+
 ## Preview locally
 ```sh
 docker run --rm -p 4002:80 -v "$PWD":/usr/share/nginx/html:ro nginx:alpine
