@@ -25,7 +25,7 @@ All links are relative, so the site works on the custom domain and under a GitHu
 ## What works differently without WordPress
 | Feature | On WordPress | Here |
 | --- | --- | --- |
-| Contact forms (6 pages) | Sent through the server | **Send Message** opens the visitor's e-mail app with a message to info@s-clinical.com already written (`static-site.js`). |
+| Contact forms (6 pages) | Sent through the server | **Send Message** sends the message to info@s-clinical.com through [Web3Forms](https://web3forms.com) (free, 250 messages a month). If that fails, or no access key is set in `WEB3FORMS_KEY`, it opens the visitor's e-mail app with the message already written (`static-site.js`). A hidden `botcheck` box catches simple spam bots. |
 | Search (magnifier icon) | WordPress search | Searches `search-index.json`, which holds the text of the 8 pages, and lists matching pages in place of the page content (`static-site.js`). |
 | Zendesk chat widget, Google Map, fonts | External services | Unchanged; they load from the same external services. |
 
